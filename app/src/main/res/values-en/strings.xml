@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Finco</string>
+
+    <!--Activity Login-->
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="activity_login_button_text">Login</string>
+    <string name="activity_login_register_now_text">Register now!</string>
+
+    <!--Register Activity-->
+    <string name="activity_register_button_text"><u>Register</u></string>
+</resources>
