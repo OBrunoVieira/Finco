@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login_content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|start"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/spacing_thirty_two"
+        android:paddingLeft="@dimen/spacing_thirty_two"
+        android:paddingRight="@dimen/spacing_thirty_two"
+        android:paddingTop="@dimen/spacing_thirty_two"
+        tools:context="com.brunovieira.finco.presentation.ui.LoginActivity">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/activity_login_email_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_text" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/activity_login_email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_ten"
+            android:inputType="textEmailAddress" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/activity_login_password_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password_text" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/activity_login_password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_ten"
+            android:inputType="textPassword" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/activity_login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_ten"
+            android:text="@string/activity_login_button_text"
+            android:textColor="@android:color/background_light"
+            app:backgroundTint="@color/colorAccent" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/activity_login_register_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/activity_login_register_now_text"
+            android:textColor="@color/colorAccent" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>
+

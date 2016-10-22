@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "38868654116",
+    "firebase_url": "https://finco-208f0.firebaseio.com",
+    "project_id": "finco-208f0",
+    "storage_bucket": "finco-208f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38868654116:android:74eac9b3279a39fb",
+        "android_client_info": {
+          "package_name": "com.brunovieira.finco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "38868654116-r15udfn91513nm5994bab6jgfkvf0b6l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.brunovieira.finco",
+            "certificate_hash": "44A53199975F5C007C77CF9C503BD3CD4C396D24"
+          }
+        },
+        {
+          "client_id": "38868654116-djfu8r09heb4392rua7d77k54pq10klu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2-Q0HaTauDFULecF8ehjVJ9h4K0EJMm8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "38868654116-djfu8r09heb4392rua7d77k54pq10klu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
