@@ -27,10 +27,18 @@ class LoginActivity : AppCompatActivity(), LoginView {
     fun setupActionBar() = setSupportActionBar(toolbar)
 
     override
+    fun setupLoginButtonListener() = activity_login_button.setOnClickListener { onRedirectHome() }
+
+    override
     fun setupRegisterButtonListener() = activity_login_register_button.setOnClickListener { onRegisterNow() }
 
+    private fun onRedirectHome(){
+        val intent = Intent(this, HomeActivity::class.java)
+        startActivity(intent)
+    }
+
     private fun onRegisterNow() {
-        val i = Intent(this, RegisterActivity::class.java)
-        startActivity(i)
+        val intent = Intent(this, RegisterActivity::class.java)
+        startActivity(intent)
     }
 }

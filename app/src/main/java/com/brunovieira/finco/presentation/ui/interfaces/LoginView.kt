@@ -6,4 +6,5 @@ package com.brunovieira.finco.presentation.ui.interfaces
 interface LoginView {
     fun setupActionBar()
     fun setupRegisterButtonListener()
+    open fun setupLoginButtonListener()
 }

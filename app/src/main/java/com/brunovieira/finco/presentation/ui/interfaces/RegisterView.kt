@@ -6,4 +6,5 @@ package com.brunovieira.finco.presentation.ui.interfaces
 interface RegisterView {
 
     open fun setupActionBar()
+    open fun onRegisterUser()
 }
