@@ -13,5 +13,6 @@ class RegisterPresenterImpl : RegisterPresenter {
     override fun attachView(registerView: RegisterView) {
         this.registerView = registerView
         this.registerView?.setupActionBar()
+        this.registerView?.onRegisterUser()
     }
 }
