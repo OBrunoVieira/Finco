@@ -14,5 +14,6 @@ class HomePresenterImpl : HomePresenter {
         this.homeView = homeView
         this.homeView?.setupToolbar()
         this.homeView?.setupDrawerToggle()
+        this.homeView?.setupFabClickListener()
     }
 }

@@ -1,5 +1,6 @@
 package com.brunovieira.finco.presentation.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
@@ -10,7 +11,6 @@ import com.brunovieira.finco.presentation.presenter.HomePresenterImpl
 import com.brunovieira.finco.presentation.presenter.interfaces.HomePresenter
 import com.brunovieira.finco.presentation.ui.interfaces.HomeView
 import kotlinx.android.synthetic.main.activity_home.*
-import kotlinx.android.synthetic.main.view_toolbar.*
 
 class HomeActivity : AppCompatActivity(), HomeView {
     var homePresenter: HomePresenter? = null
@@ -26,17 +26,22 @@ class HomeActivity : AppCompatActivity(), HomeView {
 
     override
     fun setupToolbar() {
-        setSupportActionBar(toolbar)
+        setSupportActionBar(activity_home_toolbar)
+        supportActionBar?.setDefaultDisplayHomeAsUpEnabled(true)
     }
 
     override
     fun setupDrawerToggle() {
         val drawerToggle: ActionBarDrawerToggle =
-                ActionBarDrawerToggle(this, activity_home_drawer_content_main, toolbar, R.string.app_name, R.string.app_name)
+                ActionBarDrawerToggle(this, activity_home_drawer_content_main, activity_home_toolbar, R.string.app_name, R.string.app_name)
 
         activity_home_navigation_view.setNavigationItemSelectedListener(this)
         activity_home_drawer_content_main.addDrawerListener(drawerToggle)
         drawerToggle.syncState()
+    }
+
+    override fun setupFabClickListener() {
+        activity_home_fab.setOnClickListener { redirectToRegisterExpense() }
     }
 
     override fun onBackPressed() {
@@ -53,6 +58,11 @@ class HomeActivity : AppCompatActivity(), HomeView {
         }
 
         return false
+    }
+
+    private fun redirectToRegisterExpense() {
+        val intent = Intent(this, RegisterExpenseActivity::class.java)
+        startActivity(intent)
     }
 
 }

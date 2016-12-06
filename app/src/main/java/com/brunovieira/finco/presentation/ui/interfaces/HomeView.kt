@@ -7,5 +7,7 @@ import android.support.design.widget.NavigationView
  */
 interface HomeView : NavigationView.OnNavigationItemSelectedListener {
     fun setupToolbar()
-    open fun setupDrawerToggle()
+
+    fun setupDrawerToggle()
+    fun setupFabClickListener()
 }
