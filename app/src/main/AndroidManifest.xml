@@ -29,6 +29,11 @@
             android:name=".presentation.ui.HomeActivity"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name=".presentation.ui.RegisterExpenseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent"
+            android:windowSoftInputMode="adjustPan" />
     </application>
 
 </manifest>

@@ -14,4 +14,11 @@
 
     <!--Register Activity-->
     <string name="activity_register_button_text"><u>Register</u></string>
+
+    <!--Register Expense Activity-->
+    <string name="activity_register_expense_name_text">Expense name</string>
+    <string name="activity_register_expense_maturity_date_text">Maturity date</string>
+    <string name="activity_register_expense_fixed_text">Fixed</string>
+    <string name="activity_register_expense_installments_text">Installments</string>
+    <string name="activity_register_expense_register_text">Register</string>
 </resources>
