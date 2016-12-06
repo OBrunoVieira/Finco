@@ -3,9 +3,14 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
-    <dimen name="spacing_four">4dp</dimen>
-    <dimen name="spacing_ten">10dp</dimen>
-    <dimen name="spacing_thirty_two">32dp</dimen>
+    <dimen name="density_four">4dp</dimen>
+    <dimen name="density_ten">10dp</dimen>
+    <dimen name="density_fourteen">14dp</dimen>
+    <dimen name="density_sixteen">16dp</dimen>
+    <dimen name="density_twenty_six">26dp</dimen>
+    <dimen name="density_thirty_two">32dp</dimen>
+    
+    <dimen name="text_size_twenty_six">26sp</dimen>
 
     <dimen name="drawer_height">170dp</dimen>
 </resources>
