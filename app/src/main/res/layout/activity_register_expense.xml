@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_register_expense_content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include
+        android:id="@+id/activity_register_expense_toolbar"
+        layout="@layout/view_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/activity_register_expense_value_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/density_ten"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_register_expense_toolbar">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/activity_register_expense_value_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@android:color/transparent"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/density_ten"
+            android:text="@string/br_value_mask"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_twenty_six" />
+    </FrameLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/activity_register_expense_name_hint_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/density_fourteen"
+        android:layout_marginTop="@dimen/density_fourteen"
+        android:text="@string/activity_register_expense_name_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_register_expense_value_content"
+        android:layout_marginStart="@dimen/density_fourteen" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/activity_register_expense_name_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/density_fourteen"
+        android:layout_marginRight="@dimen/density_fourteen"
+        android:inputType="text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_register_expense_name_hint_text"
+        android:layout_marginStart="@dimen/density_fourteen"
+        android:layout_marginEnd="@dimen/density_fourteen" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/activity_register_expense_maturity_date_hint_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/density_fourteen"
+        android:layout_marginTop="@dimen/density_fourteen"
+        android:text="@string/activity_register_expense_maturity_date_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_register_expense_name_edit_text"
+        android:layout_marginStart="@dimen/density_fourteen" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/activity_register_expense_maturity_date_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/density_fourteen"
+        android:layout_marginRight="@dimen/density_fourteen"
+        android:inputType="date"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_register_expense_maturity_date_hint_text"
+        android:layout_marginStart="@dimen/density_fourteen"
+        android:layout_marginEnd="@dimen/density_fourteen" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/density_fourteen"
+        android:layout_marginTop="@dimen/density_fourteen"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_register_expense_maturity_date_edit_text"
+        android:layout_marginStart="@dimen/density_fourteen">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_register_expense_fixed_text" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_register_expense_installments_text" />
+
+    </RadioGroup>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="@string/activity_register_expense_register_text"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>
