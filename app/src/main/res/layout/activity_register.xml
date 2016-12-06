@@ -14,10 +14,10 @@
         android:layout_height="match_parent"
         android:gravity="center|start"
         android:orientation="vertical"
-        android:paddingBottom="@dimen/spacing_thirty_two"
-        android:paddingLeft="@dimen/spacing_thirty_two"
-        android:paddingRight="@dimen/spacing_thirty_two"
-        android:paddingTop="@dimen/spacing_thirty_two"
+        android:paddingBottom="@dimen/density_thirty_two"
+        android:paddingLeft="@dimen/density_thirty_two"
+        android:paddingRight="@dimen/density_thirty_two"
+        android:paddingTop="@dimen/density_thirty_two"
         tools:context="com.brunovieira.finco.presentation.ui.LoginActivity">
 
         <android.support.v7.widget.AppCompatTextView
@@ -30,7 +30,7 @@
             android:id="@+id/activity_register_email_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/spacing_ten"
+            android:layout_marginBottom="@dimen/density_ten"
             android:inputType="textEmailAddress" />
 
         <android.support.v7.widget.AppCompatTextView
@@ -43,14 +43,14 @@
             android:id="@+id/activity_register_password_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/spacing_ten"
+            android:layout_marginBottom="@dimen/density_ten"
             android:inputType="textPassword" />
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/activity_register_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/spacing_ten"
+            android:layout_marginBottom="@dimen/density_ten"
             android:text="@string/activity_register_button_text"
             android:textColor="@android:color/background_light"
             app:backgroundTint="@color/colorAccent" />
